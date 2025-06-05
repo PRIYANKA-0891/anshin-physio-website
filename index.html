@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anshin Physiotherapy Clinic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0; padding: 0;
+      background: #f9fafb;
+      color: #333;
+    }
+    header {
+      background: #005a87;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.8rem;
+      letter-spacing: 1.2px;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: #cce6ff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .hero {
+      background-image: url('https://lh5.googleusercontent.com/p/AF1QipMCdNiwIQPL2UyOi8Ky_-3Gu0fGvR5kHt5Kzq4W=w1920-h1080-k-no');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      text-align: center;
+      color: #005a87;
+      margin-bottom: 1rem;
+    }
+    .about {
+      font-size: 1.15rem;
+      text-align: center;
+      color: #444;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgb(0 90 135 / 0.3);
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .staff-cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .staff-card {
+      background: #e6f2fa;
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      box-shadow: 0 4px 10px rgb(0 90 135 / 0.15);
+      width: 200px;
+      text-align: center;
+      font-weight: 600;
+      color: #005a87;
+    }
+    .reviews {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .review {
+      background: #d9f0ff;
+      border-left: 6px solid #005a87;
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+      font-style: italic;
+      color: #003f5c;
+      box-shadow: 0 2px 6px rgb(0 90 135 / 0.2);
+      border-radius: 8px;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      z-index: 999;
+    }
+    .whatsapp-button:hover {
+      background-color: #128c4a;
+    }
+    @media(max-width: 600px) {
+      .staff-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        font-size: 1.4rem;
+      }
+      .hero {
+        font-size: 1.8rem;
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Anshin Physiotherapy Clinic  
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#staff">Staff</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" aria-label="Clinic Banner">
+  <div>Dr. Mayuri Katke, MPT (Ortho)</div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p class="about">We provide personalized physiotherapy treatment for back pain, joint issues, and post-surgery recovery.</p>
+</section>
+
+<section id="gallery">
+  <h2>Clinic Gallery</h2>
+  <div class="gallery">
+    <img src="https://lh5.googleusercontent.com/p/AF1QipMCdNiwIQPL2UyOi8Ky_-3Gu0fGvR5kHt5Kzq4W=w408-h306-k-no" alt="Clinic Interior" />
+    <img src="https://lh5.googleusercontent.com/p/AF1QipNTyoCMj8eT3bkgSkHGG_dI98HwY1QoKXZn0imL=w408-h544-k-no" alt="Clinic Reception" />
+    <img src="https://lh5.googleusercontent.com/p/AF1QipNGf3GhFw8wODbq6N9J_kPJWj8mk2HzMwz8QHR2=w408-h306-k-no" alt="Treatment Room" />
+  </div>
+</section>
+
+<section id="staff">
+  <h2>Meet Our Staff</h2>
+  <div class="staff-cards">
+    <div class="staff-card">Priyanka Nagare</div>
+    <div class="staff-card">Sharvari Waghmare</div>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>What Our Patients Say</h2>
+  <div class="reviews">
+    <div class="review">"Highly professional and caring physiotherapy treatment. I felt much better after sessions here!"</div>
+    <div class="review">"Dr. Mayuri Katke’s expertise helped me recover quickly post surgery. Highly recommended."</div>
+  </div>
+</section>
+
+<section id="contact" style="text-align:center; margin-bottom:5rem;">
+  <h2>Book an Appointment</h2>
+  <p>Click the button below to chat with us on WhatsApp and book your appointment instantly.</p>
+  <a href="https://wa.me/918485015495" target="_blank" rel="noopener" class="whatsapp-button" aria-label="Book appointment on WhatsApp">
+    <svg style="width:24px;height:24px" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 15a4.5 4.5 0 0 1-5 5"/></svg> WhatsApp Us
+  </a>
+</section>
+
+</body>
+</html>
